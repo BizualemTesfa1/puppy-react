@@ -1,0 +1,44 @@
+.puppies{
+    margin: 0 auto;
+    padding: 0 5%;
+}
+.missing-puppy{
+    display: none;
+}
+.fixed-container h2{
+    text-align: center;
+}
+.puppies img{
+    margin-block:5%;
+}
+
+@media (min-width: 768px) {
+    /* fixing images hight */
+    .puppies img{
+    margin-block:0;
+    display: block;
+}
+/* showing missed puppy */
+    .missing-puppy{
+        display: block;
+        background-color: #ef4c64;
+}
+/* puppy paragraph */
+.missing-puppy p{
+    padding: 40px;
+    font-size: 36px;
+    text-align: center;
+}
+    .puppies{
+        display: flex;
+        width: 680px;
+        margin: 4% auto;
+        justify-content: space-between;
+}
+    .puppies-section div{
+        width: 32%;
+    }
+    .more-puppies-wraper div{
+        width: 48%;
+    }
+}
